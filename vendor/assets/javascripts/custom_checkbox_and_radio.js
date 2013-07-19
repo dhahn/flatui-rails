@@ -45,7 +45,7 @@ $(document).ready(function(){
     // First let's prepend icons (needed for effects)
     $(".checkbox, .radio").prepend("<span class='icon'></span><span class='icon-to-fade'></span>");
 
-    $(".checkbox, .radio").click(function(){
+    $(document).on("click", ".checkbox, .radio", function(){
         setupLabel();
     });
     setupLabel();
